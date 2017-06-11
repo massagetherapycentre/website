@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default ({children, href}) => (
-  <a href={href}>
+export default ({ children, ...rest }) => (
+  <a {...rest}>
     {children}
     <style jsx>{`
       a {
@@ -18,7 +18,9 @@ export default ({children, href}) => (
         background-repeat: repeat-x;
         border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
-
+        cursor: pointer;
+        user-select: none;
+        display: inline-block;
       }
       a:hover {
         background-position: 0 -15px;
