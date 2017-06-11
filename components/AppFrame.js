@@ -79,7 +79,7 @@ const Header = () => (
             <li><Link href="/"><a>Bookings</a></Link></li>
             <li><Link href="/"><a>Prices</a></Link></li>
             <li><Link href="/"><a>About</a></Link></li>
-            <li><Link href="/"><a>Contact</a></Link></li>
+            <li><Link href="/contactus.php"><a>Contact</a></Link></li>
           </ul>
         </div>
       </div>
@@ -141,6 +141,7 @@ const MainView = ({ children }) => (
     <style jsx>{`
       .mainView {
         flex-grow: 1;
+        padding: 50px 0 100px;
       }
     `}</style>
   </div>
@@ -182,6 +183,9 @@ export default ({ children }) => (
         margin: 0;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         line-height: 1.5;
+      }
+      * {
+        box-sizing: border-box;
       }
     `}</style>
   </div>
