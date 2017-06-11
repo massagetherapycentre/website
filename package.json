@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "dependencies": {
+    "next": "beta",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "serv": "^0.2.4"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export && touch ./out/.nojekyll",
+    "serve": "serv ./out",
+    "deploy": "git subtree push --prefix out origin gh-pages"
+  }
+}
