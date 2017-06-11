@@ -16,7 +16,7 @@ yarn dev
 # 1. Build the static site
 yarn build
 
-# 2. Serve build site locally to test everything works
+# 2. Serve built site locally to test everything works
 yarn serve
 
 # 3. Commit the new built files in the ./out directory
@@ -24,4 +24,6 @@ git add out && git commit -m 'New build'
 
 # 4. Deploy to gh-pages
 yarn deploy
+
+# 5. View deployed site: https://massagetherapycentre.github.io/website/
 ```
