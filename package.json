@@ -4,6 +4,7 @@
     "next": "beta",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-icons": "^2.2.5",
     "serv": "^0.2.4"
   },
   "scripts": {
