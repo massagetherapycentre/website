@@ -6,12 +6,32 @@ import Popover from './Popover.js';
 const TherapiesDropdown = () => (
   <Popover launcher={<a>Therapies <ArrowDropDown width={20} height={20} /></a>}>
     <ul>
-      <li><Link href="/"><a>Remedial Massage</a></Link></li>
-      <li><Link href="/"><a>Craniosacral Therapy</a></Link></li>
-      <li><Link href="/"><a>Aquatic Therapy</a></Link></li>
-      <li><Link href="/"><a>Synergistic Therapies</a></Link></li>
-      <li><Link href="/"><a>Hot Stone Therapies</a></Link></li>
-      <li><Link href="/"><a>Aromatherapy Therapies</a></Link></li>
+      <li>
+        <Link href="/therapies/RemedialMassage"><a>Remedial Massage</a></Link>
+      </li>
+      <li>
+        <Link href="/therapies/CraniosacralTherapy">
+          <a>Craniosacral Therapy</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/therapies/AquaticTherapy"><a>Aquatic Therapy</a></Link>
+      </li>
+      <li>
+        <Link href="/therapies/SynergisticTherapies">
+          <a>Synergistic Therapies</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/therapies/HotStoneTherapy">
+          <a>Hot Stone Therapies</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/therapies/Aromatherapy">
+          <a>Aromatherapy Therapies</a>
+        </Link>
+      </li>
     </ul>
     <style jsx>{`
       ul {
