@@ -55,6 +55,7 @@ export default class Popover extends React.Component {
             border-radius: 4px;
             box-shadow: 0 1px 3px rgba(0,0,0, 0.3);
             position: absolute;
+            z-index: 1;
             top: 25px;
             left: 0;
             padding: 10px 0;
