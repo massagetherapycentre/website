@@ -7,28 +7,32 @@ const TherapiesDropdown = () => (
   <Popover launcher={<a>Therapies <ArrowDropDown width={20} height={20} /></a>}>
     <ul>
       <li>
-        <Link href="/therapies/RemedialMassage"><a>Remedial Massage</a></Link>
+        <Link href="/therapies/remedialmassagecairns.php">
+          <a>Remedial Massage</a>
+        </Link>
       </li>
       <li>
-        <Link href="/therapies/CraniosacralTherapy">
+        <Link href="/therapies/craniosacraltherapycairns.php">
           <a>Craniosacral Therapy</a>
         </Link>
       </li>
       <li>
-        <Link href="/therapies/AquaticTherapy"><a>Aquatic Therapy</a></Link>
+        <Link href="/therapies/aquatictherapycairns.php">
+          <a>Aquatic Therapy</a>
+        </Link>
       </li>
       <li>
-        <Link href="/therapies/SynergisticTherapies">
+        <Link href="/therapies/synergistictherapies.php">
           <a>Synergistic Therapies</a>
         </Link>
       </li>
       <li>
-        <Link href="/therapies/HotStoneTherapy">
+        <Link href="/therapies/hotstonetherapycairns.php">
           <a>Hot Stone Therapies</a>
         </Link>
       </li>
       <li>
-        <Link href="/therapies/Aromatherapy">
+        <Link href="/therapies/aromatherapycairns.php">
           <a>Aromatherapy Therapies</a>
         </Link>
       </li>
@@ -76,9 +80,9 @@ const Header = () => (
           <div className="mobile">0418 774 388</div>
           <ul>
             <li><TherapiesDropdown /></li>
-            <li><Link href="/"><a>Bookings</a></Link></li>
-            <li><Link href="/"><a>Prices</a></Link></li>
-            <li><Link href="/"><a>About</a></Link></li>
+            <li><Link href="/bookings.php"><a>Bookings</a></Link></li>
+            <li><Link href="/pricings.php"><a>Prices</a></Link></li>
+            <li><Link href="/about.php"><a>About</a></Link></li>
             <li><Link href="/contactus.php"><a>Contact</a></Link></li>
           </ul>
         </div>
