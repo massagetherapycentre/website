@@ -1,7 +1,8 @@
 import React from 'react';
+import AppFrame from '../components/AppFrame.js';
 
 export default () => (
-  <div>
-    A page!
-  </div>
+  <AppFrame>
+    Homepage content goes here
+  </AppFrame>
 );
