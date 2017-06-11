@@ -69,7 +69,9 @@ const Header = () => (
   <div className="header">
     <Container>
       <div className="innerHeader">
-        <img src="/static/aguadulgentlogo.png" />
+        <Link href="/">
+          <a><img src="/static/aguadulgentlogo.png" /></a>
+        </Link>
         <div className="right-col">
           <div className="mobile">0418 774 388</div>
           <ul>
@@ -125,6 +127,7 @@ const Header = () => (
       a {
         text-decoration: none;
         color: inherit;
+        line-height: 1;
       }
     `}</style>
   </div>
