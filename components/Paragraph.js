@@ -1,11 +1,13 @@
 import React from 'react';
+import { colors } from '../utils/theme.js';
 
-let boo = 'blah';
-export default ({children}) => (
+export default ({ children }) => (
   <div>
-    <p dangerouslySetInnerHTML={{__html: children}}></p>
+    <p dangerouslySetInnerHTML={{ __html: children }} />
     <style jsx>{`
-      p: { margin-bottom: 2em; }
-    `}</style>  
+      p {
+        color: ${colors.gray};
+      }
+    `}</style>
   </div>
 );

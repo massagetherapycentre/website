@@ -1,6 +1,7 @@
 import React from 'react';
+import { colors } from '../utils/theme.js';
 
-export default ({priceList}) => (
+export default ({ priceList }) => (
   <table>
     <thead>
       <tr>
@@ -10,12 +11,12 @@ export default ({priceList}) => (
       </tr>
     </thead>
     <tbody>
-      {priceList.map((item) => (
-          <tr>
-            <td>{item.name}</td>
-            <td>{item.time}</td>
-            <td><b>${item.price}</b></td>
-          </tr>
+      {priceList.map(item => (
+        <tr>
+          <td>{item.name}</td>
+          <td>{item.time}</td>
+          <td><b>${item.price}</b></td>
+        </tr>
       ))}
     </tbody>
     <style jsx>{`
@@ -34,29 +35,27 @@ export default ({priceList}) => (
       }
       th {
         font-weight: bold;
-        padding: 8px;
+        padding: 15px 12px;
         line-height: 20px;
         text-align: left;
         vertical-align: bottom;
         border-top: 0;
         border-left: 1px solid #ddd;
-        color: #62A7DC;
-        background: #f0f0f0;
+        color: ${colors.blue};
+        font-size: 18px;
       }
       .table-bordered thead:first-child tr:first-child>th:last-child {
         border-top-right-radius: 4px;
       }
-      tbody>tr:nth-child(odd)>td {
-        background-color: #f9f9f9;
-      }
       td {
         border-left: 1px solid #ddd;
-        padding: 8px;
+        padding: 15px 12px;
         line-height: 20px;
         text-align: left;
         vertical-align: top;
         border-top: 1px solid #ddd;
         border-collapse: separate;
+        color: ${colors.gray};
       }
     `}</style>
   </table>

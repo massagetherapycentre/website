@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import ArrowDropDown from 'react-icons/lib/md/arrow-drop-down';
 import Popover from './Popover.js';
+import { colors } from '../utils/theme.js';
 
 const TherapiesDropdown = () => (
   <Popover launcher={<a>Therapies <ArrowDropDown width={20} height={20} /></a>}>
@@ -40,7 +41,7 @@ const TherapiesDropdown = () => (
     <style jsx>{`
       ul {
         list-style: none;
-        color: #333;
+        color: ${colors.gray};
         padding: 0;
       }
       a {
@@ -53,7 +54,7 @@ const TherapiesDropdown = () => (
         display: block;
       }
       li > a:hover {
-        background-color: #eee;
+        background-color: ${colors.lightestGray};
       }
     `}</style>
   </Popover>
@@ -90,8 +91,8 @@ const Header = () => (
     </Container>
     <style jsx>{`
       .header {
-        background-color: #000;
-        border-bottom: 5px solid #c2c0bf;
+        background-color: ${colors.black};
+        border-bottom: 5px solid ${colors.lightGray};
       }
 
       .innerHeader {
@@ -108,7 +109,7 @@ const Header = () => (
 
       .mobile {
         font-size: 30px;
-        color: #ddd;
+        color: ${colors.lightGray};
         font-weight: 300;
       }
 
@@ -119,7 +120,7 @@ const Header = () => (
       }
 
       li {
-        color: #ddd;
+        color: ${colors.lightGray};
         font-weight: bold;
         font-size: 14px;
       }
@@ -159,12 +160,13 @@ const Footer = () => (
     </Container>
     <style jsx>{`
       .footer {
-        background-color: #1e1e1e;
-        border-top: 5px solid #c2c0bf;
-        color: #aaa;
+        background-color: ${colors.darkGray};
+        border-top: 5px solid ${colors.lightGray};
+        color: ${colors.lightGray};
         font-size: 14px;
         padding: 50px 0;
         text-align: center;
+        line-height: 2;
       }
     `}</style>
   </div>

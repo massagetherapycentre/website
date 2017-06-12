@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import AppFrame from '../components/AppFrame.js';
+import Heading from '../components/Heading.js';
+import { colors } from '../utils/theme.js';
 
 export default () => (
   <AppFrame>
@@ -81,6 +83,16 @@ export default () => (
       }
       .therapyBox:not(:last-of-type) {
         margin-right: 20px;
+      }
+      h2 {
+        color: ${colors.darkGray};
+      }
+      p {
+        color: ${colors.gray};
+      }
+      a {
+        color: ${colors.blue};
+        text-decoration: none;
       }
     `}</style>
   </AppFrame>

@@ -4,6 +4,7 @@ import AppFrame from '../components/AppFrame.js';
 import ContentHeading from '../components/ContentHeading.js';
 import Button from '../components/Button.js';
 import { Input, Textarea } from '../components/Input.js';
+import { colors } from '../utils/theme.js';
 
 const INPUT_WIDTH = 300;
 const CLOUD_FUNCTION_ENDPOINT =
@@ -54,7 +55,7 @@ export default class ContactUsPage extends React.Component {
     return (
       <AppFrame>
         <form>
-          <h1>Contact form</h1>
+          <h2>Contact form</h2>
           {this.state.didSendFail &&
             <div className="row">
               <div className="errorBox">
@@ -111,7 +112,7 @@ export default class ContactUsPage extends React.Component {
             </div>}
         </form>
         <div className="contactDetails">
-          <h1>Contact details</h1>
+          <h2>Contact details</h2>
           <div className="row">
             <div className="key">Email</div>
             <div>info@massagetherapycentre.com.au</div>
@@ -140,7 +141,11 @@ export default class ContactUsPage extends React.Component {
           .contactDetails {
             margin-top: 100px;
             padding-top: 50px;
-            border-top: 1px solid #eee;
+            border-top: 1px solid ${colors.lightestGray};
+            color: ${colors.gray};
+          }
+          h2 {
+            color: ${colors.blue};
           }
           .textareaBox {
             max-width: 40em;
@@ -150,18 +155,18 @@ export default class ContactUsPage extends React.Component {
           }
           .errorBox {
             padding: 20px;
-            border: 1px solid #eee;
+            border: 1px solid ${colors.lightestGray};
             border-radius: 4px;
           }
           .errorHeading {
-            color: #FE3D55;
+            color: ${colors.red};
             margin: 0 0 5px 0;
           }
           .errorText {
             margin: 0;
           }
           .successBox {
-            color: #0FD1AB;
+            color: ${colors.green};
             font-weight: bold;
           }
         `}</style>

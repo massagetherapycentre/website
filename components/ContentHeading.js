@@ -1,4 +1,5 @@
 import React from 'react';
+import { colors } from '../utils/theme.js';
 
 export default ({ title, subtitle }) => (
   <div className="root">
@@ -7,17 +8,17 @@ export default ({ title, subtitle }) => (
     <style jsx>{`
       .root {
         padding-bottom: 30px;
-        border-bottom: 1px solid #f0eceb;
+        border-bottom: 1px solid ${colors.lightestGray};
         margin-bottom: 30px;
       }
       h1 {
         font-size: 35px;
-        color: #62a7dc;
+        color: ${colors.blue};
         margin: 0;
       }
       p {
         font-size: 14px;
-        color: #7f7f7f;
+        color: ${colors.gray};
         margin: 0 0 0 4px;
       }
     `}</style>
