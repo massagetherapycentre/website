@@ -1,12 +1,15 @@
 import React from 'react';
+import { colors } from '../utils/theme.js';
 
 const inputStyles = `
+  color: ${colors.gray};
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid ${colors.lightGray};
   display: block;
   font-size: 16px;
   padding: 8px 12px;
   width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 `;
 
 const inputHoverStyles = `
@@ -44,7 +47,4 @@ const Textarea = ({ ...props }) => {
   );
 };
 
-export {
-  Input,
-  Textarea
-};
+export { Input, Textarea };
