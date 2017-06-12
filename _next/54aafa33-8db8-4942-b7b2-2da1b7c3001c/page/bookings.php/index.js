@@ -1,0 +1,6 @@
+
+          window.__NEXT_REGISTER_PAGE('/bookings.php', function() {
+            var comp = module.exports=webpackJsonp([13],{110:function(e,t,u){"use strict";function a(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var n=u(10),r=a(n),o=u(3),d=a(o),l=u(4),i=a(l),s=u(12),f=a(s),c=u(11),p=a(c),g=u(0),_=a(g),m=u(8),h=a(m),b=function(e){function t(){return(0,d.default)(this,t),(0,f.default)(this,(t.__proto__||(0,r.default)(t)).apply(this,arguments))}return(0,p.default)(t,e),(0,i.default)(t,[{key:"render",value:function(){return _.default.createElement(h.default,{pageTitle:"Book a Massage — Aguadulgent Massage Centre"},_.default.createElement("iframe",{src:"https://aguadulgent-massage-centre.cliniko.com/bookings?business_id=51199&practitioner_id=76508&embedded=true",frameBorder:"0",scrolling:"auto",width:"100%",height:"1000"}))}}]),t}(_.default.Component);t.default=b},217:function(e,t,u){e.exports=u(110)}},[217]);
+            return { page: comp.default }
+          })
+        
