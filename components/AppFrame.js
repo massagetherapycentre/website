@@ -76,7 +76,7 @@ const Header = () => (
     <Container>
       <div className="innerHeader">
         <Link href="/">
-          <a><img src="/static/aguadulgentlogo.png" /></a>
+          <a><img src="static/aguadulgentlogo.png" /></a>
         </Link>
         <div className="right-col">
           <div className="mobile">0418 774 388</div>
