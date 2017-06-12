@@ -6,10 +6,10 @@ import BulletList from '../components/BulletList';
 import Button from '../components/Button';
 import Paragraph from '../components/Paragraph';
 
-export default ({}) => (
-  <AppFrame>
+export default () => (
+  <AppFrame pageTitle="About us — Aguadulgent Massage Centre">
     <ContentHeading
-      title="About Us"
+      title="About us"
       subtitle="Find out more about our history below"
     />
 

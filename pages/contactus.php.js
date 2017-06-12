@@ -53,7 +53,7 @@ export default class ContactUsPage extends React.Component {
 
   render() {
     return (
-      <AppFrame>
+      <AppFrame pageTitle="Contact Us — Aguadulgent Massage Centre">
         <form>
           <h2>Contact form</h2>
           {this.state.didSendFail &&

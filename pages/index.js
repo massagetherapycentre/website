@@ -5,7 +5,7 @@ import Heading from '../components/Heading.js';
 import { colors } from '../utils/theme.js';
 
 export default () => (
-  <AppFrame>
+  <AppFrame pageTitle="Agudulgent Massage Centre">
     <div className="bannerBox">
       <img src="static/massagecentrebanner.jpg" />
       <Link href="bookings.php">

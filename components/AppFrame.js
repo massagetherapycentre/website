@@ -173,10 +173,10 @@ const Footer = () => (
   </div>
 );
 
-export default ({ title = '', children }) => (
+export default ({ pageTitle = '', children }) => (
   <div className="root">
     <Head>
-      <title>{title}</title>
+      <title>{pageTitle}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
