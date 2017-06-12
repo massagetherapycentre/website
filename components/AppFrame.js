@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
 import ArrowDropDown from 'react-icons/lib/md/arrow-drop-down';
 import Popover from './Popover.js';
@@ -172,8 +173,13 @@ const Footer = () => (
   </div>
 );
 
-export default ({ children }) => (
+export default ({ title = '', children }) => (
   <div className="root">
+    <Head>
+      <title>{title}</title>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <Header />
     <MainView>{children}</MainView>
     <Footer />
