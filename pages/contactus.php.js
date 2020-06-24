@@ -123,7 +123,7 @@ export default class ContactUsPage extends React.Component {
           </div>
           <div className="row">
             <div className="key">Phone</div>
-            <div>0418 774 388</div>
+            <div>0431 199 192</div>
           </div>
           <div className="row">
             <div className="key">Hours</div>
