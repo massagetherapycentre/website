@@ -1,4 +1,5 @@
 # Getting started
+
 ```bash
 # Install all the dependencies
 yarn
@@ -12,6 +13,7 @@ yarn dev
 ```
 
 # Deploying
+
 ```bash
 # 1. Build the static site
 yarn build
@@ -26,4 +28,14 @@ git add out && git commit -m 'New build'
 yarn deploy
 
 # 5. View deployed site: https://massagetherapycentre.github.io/website/
+```
+
+# Issues
+
+CNAME file was added to origin gh-pages but not into master so I was getting the following error:
+`Updates were rejected because a pushed branch tip is behind its remote counterpart.`
+
+```bash
+# Split out directory into its own branch so it can be force pushed
+git push origin `git subtree split --prefix out gh`:gh-pages --force
 ```
